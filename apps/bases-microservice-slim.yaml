@@ -1,0 +1,12 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: bases-microservice-slim
+  namespace: flux-system
+spec:
+  interval: 30s
+  ref:
+    branch: raspi
+  url: https://github.com/tbulubas/bases-microservice-slim
+
